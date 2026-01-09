@@ -2,7 +2,7 @@
 
 **Fast, unopinionated, minimalist web framework for [Node.js](https://nodejs.org).**
 
-**This project has a [Code of Conduct][].**
+**This project has a [Code of Conduct].**
 
 ## Table of contents
 
@@ -40,7 +40,9 @@ app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000')
+})
 ```
 # for example 
 
@@ -149,11 +151,11 @@ The Express.js project welcomes all constructive contributions. Contributions ta
 from code for bug fixes and enhancements, to additions and fixes to documentation, additional
 tests, triaging incoming pull requests and issues, and more!
 
-See the [Contributing Guide](https://github.com/expressjs/.github/blob/HEAD/CONTRIBUTING.yml) for more technical details on contributing.
+See the [Contributing Guide] for more technical details on contributing.
 
 ### Security Issues
 
-If you discover a security vulnerability in Express, please see [Security Policies and Procedures](SECURITY.md).
+If you discover a security vulnerability in Express, please see [Security Policies and Procedures](https://github.com/expressjs/express?tab=security-ov-file).
 
 ### Running Tests
 
@@ -207,13 +209,12 @@ The original author of Express is [TJ Holowaychuk](https://github.com/tj)
 * [bjohansebas](https://github.com/bjohansebas) - **Sebastian Beltran**
 * [carpasse](https://github.com/carpasse) - **Carlos Serrano**
 * [CBID2](https://github.com/CBID2) - **Christine Belzie**
-* [dpopp07](https://github.com/dpopp07) - **Dustin Popp**
 * [UlisesGascon](https://github.com/UlisesGascon) - **Ulises Gascón** (he/him)
-* [3imed-jaberi](https://github.com/3imed-jaberi) - **Imed Jaberi**
 * [IamLizu](https://github.com/IamLizu) - **S M Mahmudul Hasan** (he/him)
 * [Phillip9587](https://github.com/Phillip9587) - **Phillip Barta**
-* [Sushmeet](https://github.com/Sushmeet) - **Sushmeet Sunger**
-* [rxmarbles](https://github.com/rxmarbles) **Rick Markins** (He/him)
+* [efekrskl](https://github.com/efekrskl) - **Efe Karasakal**
+* [rxmarbles](https://github.com/rxmarbles) - **Rick Markins** (he/him)
+
 
 <details>
 <summary>Triagers emeriti members</summary>
@@ -252,6 +253,9 @@ The original author of Express is [TJ Holowaychuk](https://github.com/tj)
   * [dakshkhetan](https://github.com/dakshkhetan) - **Daksh Khetan** (he/him)
   * [lucasraziel](https://github.com/lucasraziel) - **Lucas Soares Do Rego**
   * [mertcanaltin](https://github.com/mertcanaltin) - **Mert Can Altin**
+  * [dpopp07](https://github.com/dpopp07) - **Dustin Popp**
+  * [Sushmeet](https://github.com/Sushmeet) - **Sushmeet Sunger**
+  * [3imed-jaberi](https://github.com/3imed-jaberi) - **Imed Jaberi**
 
 </details>
 
@@ -260,14 +264,15 @@ The original author of Express is [TJ Holowaychuk](https://github.com/tj)
 
   [MIT](LICENSE)
 
-[coveralls-image]: https://badgen.net/coveralls/c/github/expressjs/express/master
+[coveralls-image]: https://img.shields.io/coverallsCoverage/github/expressjs/express?branch=master
 [coveralls-url]: https://coveralls.io/r/expressjs/express?branch=master
-[github-actions-ci-image]: https://badgen.net/github/checks/expressjs/express/master?label=CI
+[github-actions-ci-image]: https://img.shields.io/github/actions/workflow/status/expressjs/express/ci.yml?branch=master&label=ci
 [github-actions-ci-url]: https://github.com/expressjs/express/actions/workflows/ci.yml
-[npm-downloads-image]: https://badgen.net/npm/dm/express
+[npm-downloads-image]: https://img.shields.io/npm/dm/express
 [npm-downloads-url]: https://npmcharts.com/compare/express?minimal=true
 [npm-url]: https://npmjs.org/package/express
-[npm-version-image]: https://badgen.net/npm/v/express
+[npm-version-image]: https://img.shields.io/npm/v/express
 [ossf-scorecard-badge]: https://api.scorecard.dev/projects/github.com/expressjs/express/badge
 [ossf-scorecard-visualizer]: https://ossf.github.io/scorecard-visualizer/#/projects/github.com/expressjs/express
-[Code of Conduct]: https://github.com/expressjs/express/blob/master/Code-Of-Conduct.md
+[Code of Conduct]: https://github.com/expressjs/.github/blob/HEAD/CODE_OF_CONDUCT.md
+[Contributing Guide]: https://github.com/expressjs/.github/blob/HEAD/CONTRIBUTING.md
